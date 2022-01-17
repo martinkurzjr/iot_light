@@ -1,6 +1,6 @@
 compiler:
   solc:
-    version: '0.4.15'
+    version: '0.6.0'
 networks:
   default: development
   ropsten:
