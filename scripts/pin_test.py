@@ -9,10 +9,11 @@ mode = GPIO.getmode()
 print(mode)
 
 # setup channel
-chan_list = [79]
+chan_list = [12]
 # GPIO.setup(channel, GPIO.IN)
 # GPIO.setup(chan_list, GPIO.OUT)
 # initial value
+# GPIO.setup(chan_list, GPIO.OUT, initial=GPIO.HIGH)
 GPIO.setup(chan_list, GPIO.OUT, initial=GPIO.HIGH)
 print("setup channel 79 to out and high")
 
