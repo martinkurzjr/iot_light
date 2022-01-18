@@ -61,11 +61,14 @@ rgb = iot_light.functions.light().call()
 print(rgb)
 
 # logik for led
+
+chan_list_red = [12]
+
 if rgb[0] > 0:
     print("red light by pin 12 for 10 sec")
-    GPIO.setup(chan_list, GPIO.OUT, initial=GPIO.HIGH)
+    GPIO.setup(chan_list_red, GPIO.OUT, initial=GPIO.HIGH)
     time.sleep(10)
-    GPIO.setup(chan_list, GPIO.OUT, initial=GPIO.LOW)
+    GPIO.setup(chan_list_red, GPIO.OUT, initial=GPIO.LOW)
 elif rgb[1] > 0:
     print("green")
 elif rgb[2] > 0:
